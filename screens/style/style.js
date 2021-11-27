@@ -7,34 +7,6 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
 
-
-
-  // Header
-  header:{
-    backgroundColor: "#fff",
-    paddingVertical: 12,
-    borderBottomWidth: 1.5,
-    alignItems: 'center',
-    width: "100%",
-    borderBottomColor: "black",
-  },
-  title:{
-    fontFamily: 'Roboto',
-    color: "black",
-    fontWeight: "bold",
-    fontSize: 25,
-    textAlign: "center",
-  },
-  subtitle:{
-    borderRadius: 5,
-    borderWidth: .5,
-    fontSize: 14,
-    paddingHorizontal: 20,
-    color: "white",
-    backgroundColor: "#f57b42",
-  },
-  
-
   // Menu button
   menuBttn:{
     backgroundColor: "#f57b42",
@@ -73,6 +45,31 @@ export const styles = StyleSheet.create({
     elevation: 1.5,
   },
 
+  // Home
+  // Header
+  header:{
+    backgroundColor: "#fff",
+    paddingVertical: 12,
+    borderBottomWidth: 1.5,
+    alignItems: 'center',
+    width: "100%",
+    borderBottomColor: "black",
+  },
+  title:{
+    fontFamily: 'Roboto',
+    color: "black",
+    fontWeight: "bold",
+    fontSize: 25,
+    textAlign: "center",
+  },
+  subtitle:{
+    borderRadius: 5,
+    borderWidth: .5,
+    fontSize: 14,
+    paddingHorizontal: 20,
+    color: "white",
+    backgroundColor: "#f57b42",
+  },
   // Body
   bodyContainer:{
     width: "100%",
@@ -91,12 +88,30 @@ export const styles = StyleSheet.create({
     backgroundColor: "#fff",
     borderRadius: 10,
     margin: 10,
-    width: "38%",
-    height: "28%",
+    width: "44%",
+    height: "30%",
     justifyContent: "center",
     alignItems: "center",
     elevation: 2.5,
+  },
+  image:{
+    flex: 1,
+    justifyContent: "center"
+  },
+  // Home end
+
+  // AllRecipe
+  recipeList:{
+    backgroundColor: "#fff",
+    borderRadius: 10,
+    margin: 10,
+    width: "85%",
+    height: "50%",
+    justifyContent: "center",
+    alignItems: "center",
+    elevation: 1.5,
   }
+
 
 
 });
