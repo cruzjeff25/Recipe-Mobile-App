@@ -17,7 +17,7 @@ export default function Home({navigation}){
         <View style={styles.bodyContainer}>
 
           <Text style={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut sem viverra aliquet eget sit amet.
+            Lutong Pinoy offers you Filipino food recipes that are known for basta ayun
           </Text>
 
           <TouchableOpacity  style={styles.box} onPress = {() => navigation.navigate('MainDish')}>
