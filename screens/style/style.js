@@ -3,7 +3,7 @@ import {StyleSheet} from 'react-native';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#e6e6e6',
+    backgroundColor: '#f0cdbd',
     alignItems: 'center',
   },
 
@@ -64,7 +64,7 @@ export const styles = StyleSheet.create({
   },
   subtitle:{
     borderRadius: 5,
-    borderWidth: .5,
+    borderWidth: .9,
     fontSize: 14,
     paddingHorizontal: 20,
     color: "white",
@@ -80,23 +80,37 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
   },
   description:{
+    fontSize: 16,
     padding: 5,
     margin: 10,
     lineHeight: 25,
+    color:'black',
   },
   box:{
     backgroundColor: "#fff",
     borderRadius: 10,
     margin: 10,
     width: "44%",
-    height: "30%",
+    height: "28%",
     justifyContent: "center",
     alignItems: "center",
-    elevation: 2.5,
+    elevation: 5,
   },
+  boxText:{
+    backgroundColor: 'rgba(52, 52, 52, 0.5)',
+    borderRadius: 10, 
+    padding: 5,
+    color: "white",
+    fontSize: 25,
+    fontWeight: "bold",
+    justifyContent: "center",
+    textAlign: "center",
+  },  
   image:{
-    flex: 1,
-    justifyContent: "center"
+    width: 160,
+    height: 160,
+    alignItems: 'center',
+    justifyContent:'center',
   },
   // Home end
 

@@ -4,13 +4,13 @@ import { styles } from './style/style';
 
 
 export default function Home({navigation}){
-   
+
   return(
     <SafeAreaView style={styles.container}>
         {/* Header */}
         <View style={styles.header}>
-          <Text style={styles.title}>The Recipe</Text>
-          <Text style={styles.subtitle}>Filipino Foods</Text>
+          <Text style={styles.title}>Lutong Pinoy</Text>
+          <Text style={styles.subtitle}>Your Signature Filipino Food Recipe App!</Text>
         </View> 
 
         {/* Body */}
@@ -21,22 +21,32 @@ export default function Home({navigation}){
           </Text>
 
           <TouchableOpacity  style={styles.box} onPress = {() => navigation.navigate('MainDish')}>
-            <Text>Main Dish</Text>
             <ImageBackground
             source={require('../assets/mainDish.png')} 
             resizeMode="cover" style={styles.image}
             >
-              <Text style={styles.text}>Inside</Text>
+              <Text style={styles.boxText}>Main Dish</Text>
             </ImageBackground>
           </TouchableOpacity >
+
           <TouchableOpacity  style={styles.box} onPress = {() => navigation.navigate('SideDish')}>
-            <Text>Side Dish</Text>
+            <ImageBackground
+              source={require('../assets/sidedish.png')} 
+              resizeMode="cover" style={styles.image}
+              >
+                <Text style={styles.boxText}>Side Dish</Text>
+            </ImageBackground>
           </TouchableOpacity >
           <TouchableOpacity  style={styles.box} onPress = {() => navigation.navigate('Desserts')}>
-            <Text>Desserts</Text>
+            <ImageBackground
+              source={require('../assets/dessert.png')} 
+              resizeMode="cover" style={styles.image}
+              >
+                <Text style={styles.boxText}>Desserts</Text>
+            </ImageBackground>
           </TouchableOpacity >        
           <TouchableOpacity  style={styles.box} onPress = {() => navigation.navigate('AllRecipe')}>
-            <Text>All</Text>
+            <Text style={{color:'black', fontSize:18, fontWeight:'bold'}}>View All Recipe</Text>
           </TouchableOpacity >    
         </View>  
     </SafeAreaView>

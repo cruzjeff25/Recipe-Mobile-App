@@ -1,9 +1,13 @@
 import React, { useState } from "react";
-import {View, Text, TouchableOpacity, Modal, Image} from 'react-native'
+import {View, Text, TouchableOpacity, Modal, Image, ImageBackground} from 'react-native'
 import { styles } from './style/style';
 
 export default function MainDish({navigation}){
   const [modalOpen, setModalOpen] = useState(false);
+  
+  const ginilingImage = { uri: "https://lh4.googleusercontent.com/_rBrnSm1Xl08/Tccz4bW_OSI/AAAAAAAAJQ4/rIK_K7Grfnc/s800/pork-giniling.jpg" };
+  const sisigImage = { uri: "https://cdn.shopify.com/s/files/1/0471/6517/8023/products/thomson-road-kitchen-4555-800x800_800x.jpg?v=1600624959" };
+
     return(
 
 /* Body */
@@ -16,10 +20,20 @@ export default function MainDish({navigation}){
         </Text>
         {/* Dish Buttons */}
         <TouchableOpacity  style={styles.box} onPress = {() => navigation.navigate('PorkGiniling')}>
-          <Text>Pork Giniling</Text>
+          <ImageBackground
+            source={require('../assets/giniling.png')} 
+            resizeMode="cover" style={styles.image}
+            >
+              <Text style={styles.boxText}>Pork Giniling Recipe</Text>
+          </ImageBackground>
         </TouchableOpacity >
         <TouchableOpacity  style={styles.box} onPress = {() => navigation.navigate('PorkSisig')}>
-          <Text>Pork Sisig</Text>
+        <ImageBackground
+            source={require('../assets/sisig.png')} 
+            resizeMode="cover" style={styles.image}
+            >
+              <Text style={styles.boxText}>Pork Sisig Recipe</Text>
+          </ImageBackground>
         </TouchableOpacity >    
       </View>  
 

@@ -6,7 +6,7 @@ export default function AllRecipe({navigation}){
     // const [modalOpen, setModalOpen] = useState(false);
     return(
       <ScrollView>
-         <View style={{flex:1,height:'100%', width:"100%", paddingBottom:1500, alignItems:'center'}}>
+         <View style={{flex:1,height:'100%', width:"100%", paddingBottom:1500, alignItems:'center', backgroundColor:'#f0cdbd'}}>
          <TouchableOpacity  style={styles.recipeList} onPress = {() => navigation.navigate('PorkGiniling')}>
           <Text>Pork Giniling</Text>
         </TouchableOpacity >
