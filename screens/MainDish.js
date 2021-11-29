@@ -10,14 +10,12 @@ export default function MainDish({navigation}){
 
     return(
 
-/* Body */
-
+    /* Body */
     <View style={styles.container}>  
       <View style={styles.bodyContainer}>
 
         <Text style={styles.description}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut sem viverra aliquet eget sit amet.
-        </Text>
+        Main courses are the main star of all the courses. It is the most important, most heartiest, and the largest. </Text>
         {/* Dish Buttons */}
         <TouchableOpacity  style={styles.box} onPress = {() => navigation.navigate('PorkGiniling')}>
           <ImageBackground
@@ -28,7 +26,7 @@ export default function MainDish({navigation}){
           </ImageBackground>
         </TouchableOpacity >
         <TouchableOpacity  style={styles.box} onPress = {() => navigation.navigate('PorkSisig')}>
-        <ImageBackground
+          <ImageBackground
             source={require('../assets/sisig.png')} 
             resizeMode="cover" style={styles.image}
             >
@@ -45,7 +43,6 @@ export default function MainDish({navigation}){
         />
       </TouchableOpacity>
 
-    
       {/* Menu Modal */}
       <Modal visible={modalOpen} animationType="fade">
         <View style={styles.modalBG}>
@@ -82,6 +79,5 @@ export default function MainDish({navigation}){
       </Modal>  
 
     </View>
-    
-    )
+  )
 }

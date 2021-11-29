@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {View, Text, TouchableOpacity, Modal, Image} from 'react-native'
+import {View, Text, TouchableOpacity, Modal, Image, ImageBackground} from 'react-native'
 import { styles } from './style/style';
 
 export default function Desserts({navigation}){
@@ -9,21 +9,41 @@ export default function Desserts({navigation}){
         <View style={styles.bodyContainer}>
 
           <Text style={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut sem viverra aliquet eget sit amet.
+          Courses often end with a sweet, decadent course, known as the dessert, which can be either hot or cold, or accompanied by a glass of dessert wine, coffee, or tea.
           </Text>
 
         {/* Dish Buttons */}
           <TouchableOpacity  style={styles.box} onPress = {() => navigation.navigate('Kutsinta')}>
-            <Text>Kutsinta</Text>
+          <ImageBackground
+              source={require('../assets/kutsinta.png')} 
+              resizeMode="cover" style={styles.image}
+            >
+              <Text style={styles.boxText}>Kutsinta Recipe</Text>
+            </ImageBackground>
           </TouchableOpacity >
           <TouchableOpacity  style={styles.box} onPress = {() => navigation.navigate('LecheFlan')}>
-            <Text>Leche Flan </Text>
+          <ImageBackground
+              source={require('../assets/dessert.png')} 
+              resizeMode="cover" style={styles.image}
+            >
+              <Text style={styles.boxText}>Leche Flan Recipe</Text>
+            </ImageBackground>
           </TouchableOpacity >
           <TouchableOpacity  style={styles.box} onPress = {() => navigation.navigate('Puto')}>
-            <Text>Puto</Text>
+            <ImageBackground
+              source={require('../assets/puto.png')} 
+              resizeMode="cover" style={styles.image}
+            >
+              <Text style={styles.boxText}>Puto Recipe</Text>
+            </ImageBackground>
           </TouchableOpacity >        
           <TouchableOpacity  style={styles.box} onPress = {() => navigation.navigate('Halohalo')}>
-            <Text>Halo-halo</Text>
+            <ImageBackground
+              source={require('../assets/halohalo.png')} 
+              resizeMode="cover" style={styles.image}
+            >
+              <Text style={styles.boxText}>Halo-halo Recipe</Text>
+            </ImageBackground>
           </TouchableOpacity >    
         </View>
         {/* Menu button */}

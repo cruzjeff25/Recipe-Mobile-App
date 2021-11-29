@@ -60,9 +60,11 @@ export const styles = StyleSheet.create({
     color: "black",
     fontWeight: "bold",
     fontSize: 25,
+    marginBottom: 5,
     textAlign: "center",
   },
   subtitle:{
+    padding: 3,
     borderRadius: 5,
     borderWidth: .9,
     fontSize: 14,
@@ -80,8 +82,10 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
   },
   description:{
+    textAlign:'center',
     fontSize: 16,
-    padding: 5,
+    padding: 2,
+    marginBottom: 25,
     margin: 10,
     lineHeight: 25,
     color:'black',
@@ -107,8 +111,8 @@ export const styles = StyleSheet.create({
     textAlign: "center",
   },  
   image:{
-    width: 160,
-    height: 160,
+    width: 144,
+    height: 122,
     alignItems: 'center',
     justifyContent:'center',
   },
@@ -119,13 +123,50 @@ export const styles = StyleSheet.create({
     backgroundColor: "#fff",
     borderRadius: 10,
     margin: 10,
-    width: "85%",
-    height: "50%",
+    width: "45%",
+    height: "11%",
     justifyContent: "center",
     alignItems: "center",
     elevation: 1.5,
-  }
+  },
 
-
-
+  //Recipe webpage
+  recipeTitle:{
+    fontSize: 30,
+    fontWeight: 'bold',
+    marginTop: 22,
+    margin: 5,
+  },
+  recipeImage:{
+    width: "92%",
+    height: 215,
+    margin: 28,
+  },
+  recipeBody:{
+    width: "92%",
+    borderRadius: 18,
+    paddingHorizontal: 25,
+    color: "white",
+    backgroundColor: "#f57b42",
+    flex:1,
+    alignItems:'center',
+    justifyContent:'center',
+    marginHorizontal: 30,
+  },
+  recipeArea:{
+    marginVertical: 20,
+    marginHorizontal: 30,
+  },
+  recipeAreaTitle:{
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 10,
+  },
+  recipeAreaDetail:{
+    display:'flex',
+    flexDirection: 'column',
+    alignContent: 'center',
+    
+    fontSize: 14,
+  },
 });

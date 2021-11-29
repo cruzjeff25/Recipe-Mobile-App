@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {View, Text, TouchableOpacity, Modal, Image} from 'react-native'
+import {View, Text, TouchableOpacity, Modal, Image, ImageBackground} from 'react-native'
 import { styles } from './style/style';
 
 export default function SideDish({navigation}){
@@ -9,18 +9,34 @@ export default function SideDish({navigation}){
         <View style={styles.bodyContainer}>
 
           <Text style={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut sem viverra aliquet eget sit amet.
+          Side dishes or appetizers are served before the main course. It is usually a small serving of food
+          which stimulates one's appetite and prepares eaters for the main course.
           </Text>
 
           {/* Dish Buttons */}
           <TouchableOpacity  style={styles.box} onPress = {() => navigation.navigate("TokwatBaboy")}>
-            <Text>Tokwa't Baboy</Text>
+            <ImageBackground
+              source={require('../assets/tokwatBaboy.png')} 
+              resizeMode="cover" style={styles.image}
+            >
+              <Text style={styles.boxText}>Tokwa't Baboy Recipe</Text>
+            </ImageBackground>
           </TouchableOpacity >
           <TouchableOpacity  style={styles.box} onPress = {() => navigation.navigate('PancitBihon')}>
-            <Text>Pancit Bihon</Text>
+          <ImageBackground
+            source={require('../assets/sidedish.png')} 
+            resizeMode="cover" style={styles.image}
+            >
+              <Text style={styles.boxText}>Pancit Bihon Recipe</Text>
+          </ImageBackground>
           </TouchableOpacity >
           <TouchableOpacity  style={styles.box} onPress = {() => navigation.navigate('PancitPalabok')}>
-            <Text>Pancit Palabok</Text>
+          <ImageBackground
+            source={require('../assets/pancitPalabok.png')} 
+            resizeMode="cover" style={styles.image}
+            >
+              <Text style={styles.boxText}>Pancit Palabok Recipe</Text>
+          </ImageBackground>
           </TouchableOpacity > 
         </View>
       {/* Menu button */}

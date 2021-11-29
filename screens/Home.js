@@ -2,7 +2,6 @@ import React from "react";
 import {View, SafeAreaView,  Text, TouchableOpacity, ScrollView, ImageBackground, Image} from 'react-native'
 import { styles } from './style/style';
 
-
 export default function Home({navigation}){
 
   return(
@@ -17,7 +16,7 @@ export default function Home({navigation}){
         <View style={styles.bodyContainer}>
 
           <Text style={styles.description}>
-            Lutong Pinoy offers you Filipino food recipes that are known for basta ayun
+            Lutong Pinoy offers you Filipino food recipes that are known to many, especially Filipino food munchers. Enjoy your stay and have fun cooking!
           </Text>
 
           <TouchableOpacity  style={styles.box} onPress = {() => navigation.navigate('MainDish')}>
@@ -46,9 +45,14 @@ export default function Home({navigation}){
             </ImageBackground>
           </TouchableOpacity >        
           <TouchableOpacity  style={styles.box} onPress = {() => navigation.navigate('AllRecipe')}>
-            <Text style={{color:'black', fontSize:18, fontWeight:'bold'}}>View All Recipe</Text>
+            <ImageBackground
+              source={require('../assets/allrecipes.png')} 
+              resizeMode="cover" style={styles.image}
+              >
+                <Text style={styles.boxText}>All Recipes</Text>
+            </ImageBackground>
           </TouchableOpacity >    
         </View>  
     </SafeAreaView>
-    )
+  )
 }

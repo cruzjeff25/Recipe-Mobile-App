@@ -1,38 +1,80 @@
 import React, { useState } from "react";
-import {View, Text, TouchableOpacity, Modal, Image, ScrollView} from 'react-native'
+import {View, Text, TouchableOpacity, Modal, Image, ScrollView, ImageBackground} from 'react-native'
 import { styles } from './style/style';
 
 export default function AllRecipe({navigation}){
     // const [modalOpen, setModalOpen] = useState(false);
     return(
       <ScrollView>
-         <View style={{flex:1,height:'100%', width:"100%", paddingBottom:1500, alignItems:'center', backgroundColor:'#f0cdbd'}}>
+         <View style={{flex:1, height:'100%', width:"100%", paddingBottom:170, alignItems:'center', backgroundColor:'#f0cdbd'}}>
          <TouchableOpacity  style={styles.recipeList} onPress = {() => navigation.navigate('PorkGiniling')}>
-          <Text>Pork Giniling</Text>
+          <ImageBackground
+            source={require('../assets/giniling.png')} 
+            resizeMode="cover" style={styles.image}>
+              <Text style={styles.boxText}>Pork Giniling Recipe</Text>
+          </ImageBackground>
         </TouchableOpacity >
         <TouchableOpacity  style={styles.recipeList} onPress = {() => navigation.navigate('PorkSisig')}>
-        <Text>Pork Sisig</Text>
+          <ImageBackground
+            source={require('../assets/sisig.png')} 
+            resizeMode="cover" style={styles.image}>
+              <Text style={styles.boxText}>Pork Sisig Recipe</Text>
+          </ImageBackground>
         </TouchableOpacity >
         <TouchableOpacity  style={styles.recipeList} onPress = {() => navigation.navigate("TokwatBaboy")}>
-          <Text>Tokwa't Baboy</Text>
+          <ImageBackground
+              source={require('../assets/tokwatBaboy.png')} 
+              resizeMode="cover" style={styles.image}
+            >
+              <Text style={styles.boxText}>Tokwa't Baboy Recipe</Text>
+            </ImageBackground>
         </TouchableOpacity >
         <TouchableOpacity  style={styles.recipeList} onPress = {() => navigation.navigate('PancitBihon')}>
-          <Text>Pancit Bihon</Text>
+          <ImageBackground
+            source={require('../assets/sidedish.png')} 
+            resizeMode="cover" style={styles.image}
+            >
+              <Text style={styles.boxText}>Pancit Bihon Recipe</Text>
+          </ImageBackground>
         </TouchableOpacity >
         <TouchableOpacity  style={styles.recipeList} onPress = {() => navigation.navigate('PancitPalabok')}>
-          <Text>Pancit Palabok</Text>
+          <ImageBackground
+            source={require('../assets/pancitPalabok.png')} 
+            resizeMode="cover" style={styles.image}
+            >
+              <Text style={styles.boxText}>Pancit Palabok Recipe</Text>
+          </ImageBackground>
         </TouchableOpacity > 
         <TouchableOpacity  style={styles.recipeList} onPress = {() => navigation.navigate('Kutsinta')}>
-          <Text>Kutsinta</Text>
+          <ImageBackground
+              source={require('../assets/kutsinta.png')} 
+              resizeMode="cover" style={styles.image}
+            >
+              <Text style={styles.boxText}>Kutsinta Recipe</Text>
+            </ImageBackground>
         </TouchableOpacity >
         <TouchableOpacity  style={styles.recipeList} onPress = {() => navigation.navigate('LecheFlan')}>
-          <Text>Leche Flan </Text>
+          <ImageBackground
+              source={require('../assets/dessert.png')} 
+              resizeMode="cover" style={styles.image}
+            >
+              <Text style={styles.boxText}>Leche Flan Recipe</Text>
+            </ImageBackground>
         </TouchableOpacity >
         <TouchableOpacity  style={styles.recipeList} onPress = {() => navigation.navigate('Puto')}>
-          <Text>Puto</Text>
+          <ImageBackground
+              source={require('../assets/puto.png')} 
+              resizeMode="cover" style={styles.image}
+            >
+              <Text style={styles.boxText}>Puto Recipe</Text>
+            </ImageBackground>
         </TouchableOpacity >        
         <TouchableOpacity  style={styles.recipeList} onPress = {() => navigation.navigate('Halohalo')}>
-          <Text>Halo-halo</Text>
+          <ImageBackground
+              source={require('../assets/halohalo.png')} 
+              resizeMode="cover" style={styles.image}>
+              <Text style={styles.boxText}>Halo-Halo Recipe</Text>
+            </ImageBackground>
         </TouchableOpacity >    
       </View>
       </ScrollView>
