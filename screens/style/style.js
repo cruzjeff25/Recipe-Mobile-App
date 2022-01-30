@@ -1,10 +1,17 @@
 import {StyleSheet} from 'react-native';
 
-export const styles = StyleSheet.create({
+export const styles = StyleSheet.create({  
   container: {
     flex: 1,
     backgroundColor: '#f0cdbd',
     alignItems: 'center',
+  },
+
+  apiContainer: {
+    flex: 1,
+    backgroundColor: '#f0cdbd',
+    alignItems: 'center',
+    justifyContent: 'center', 
   },
 
   // Menu button

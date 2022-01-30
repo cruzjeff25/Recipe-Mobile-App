@@ -66,7 +66,11 @@ export default function MainDish({navigation}){
 
           <TouchableOpacity  style={styles.menu} onPress = {() => navigation.navigate('AllRecipe')}>
             <Text>All Recipe</Text>
-          </TouchableOpacity >   
+          </TouchableOpacity >  
+
+          <TouchableOpacity  style={styles.menu} onPress = {() => navigation.navigate('APIScreen')}>
+            <Text>API Screen Testing</Text>
+          </TouchableOpacity >  
           </View>
         </View>
 

@@ -16,6 +16,7 @@ import KutsintaScreen from './screens/Kutsinta'
 import LecheFlanScreen from './screens/LecheFlan'
 import PutoScreen from './screens/Puto'
 import HalohaloScreen from './screens/Halohalo'
+import OthersScreen from './screens/Others'
 import { ScrollView } from "react-native";
 
 
@@ -39,11 +40,10 @@ const MyStack = () =>{
         <Stack.Screen name="LecheFlan" component={LecheFlanScreen}/>
         <Stack.Screen name="Puto" component={PutoScreen}/>
         <Stack.Screen name="Halohalo" component={HalohaloScreen}/>
+        <Stack.Screen name="Others" component={OthersScreen}/>
       </Stack.Navigator>
   
     </NavigationContainer>
-  
-
   );
 };
 

@@ -79,6 +79,10 @@ export default function Desserts({navigation}){
           <TouchableOpacity  style={styles.menu} onPress = {() => navigation.navigate('AllRecipe')}>
             <Text>All Recipe</Text>
           </TouchableOpacity >   
+
+          <TouchableOpacity  style={styles.menu} onPress = {() => navigation.navigate('APIScreen')}>
+            <Text>API Screen Testing</Text>
+          </TouchableOpacity > 
           </View>
         </View>
 
